@@ -1,0 +1,8 @@
+0	1	mikroc8051.exe -MSF -DBG -pAT89C51 -ES -DL -O11111114 -fo10 -N"D:\Mikro 8051\New folder\BT5b.mcp51" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for 8051\defs\" -SP"D:\Mikro 8051\New folder\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for 8051\Uses\ATMEL\" "BT5b.c" "__Lib_Math.mcl" "__Lib_MathDouble.mcl" "__Lib_System.mcl" "__Lib_Delays.mcl" "__Lib_UART_Timer1.mcl" "__Lib_CType.mcl" "__Lib_CString.mcl" "__Lib_CStdlib.mcl" "__Lib_CMath.mcl" "__Lib_Conversions.mcl" "__Lib_Sprintf.mcl" "__Lib_PrintOut.mcl" "__Lib_Sprinti.mcl" "__Lib_Sprintl.mcl" "__Lib_Time.mcl" "__Lib_Trigonometry.mcl" "__Lib_Button.mcl" "__Lib_Keypad4x4.mcl" "__Lib_Manchester.mcl" "__Lib_OneWire.mcl" "__Lib_PS2.mcl" "__Lib_Sound.mcl" "__Lib_SoftI2C.mcl" "__Lib_SoftSPI.mcl" "__Lib_SoftUART.mcl" "__Lib_GlcdFonts.mcl" "__Lib_Glcd.mcl" "__Lib_LcdConsts.mcl" "__Lib_Lcd.mcl" "__Lib_RS485.mcl" "__Lib_T6963C.mcl"	 
+error: 1	304	 error: Can't open include file "regx52.h"      #include<REGX52.H> 1 error in preprocessor.	D:\Mikro 8051\New folder\BT5b.c
+diagnostics: 0	122	Compilation Started	BT5b.c
+error: 5	325	Too many initializers	BT5b.c
+error: 20	318	Assigning to non-lvalue 'TR0'	BT5b.c
+error: 22	318	Assigning to non-lvalue 'TR0'	BT5b.c
+error: 23	318	Assigning to non-lvalue 'TF0'	BT5b.c
+error: 0	102	Finished (with errors): 10 Dec 2024, 13:55:49	BT5b.mcp51
