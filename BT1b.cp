@@ -1,15 +1,19 @@
-#line 1 "D:/Mikro 8051/New folder/BT1b.c"
-unsigned char code chuB[]={ 0X7E, 0X66, 0X66, 0X7E, 0X66, 0X66, 0X7E, 0X00};
-unsigned char code chuE[]={ 0X7E, 0X60, 0X60, 0X7E, 0X60, 0X60, 0X7E, 0X00};
-unsigned char code chuN[]={ 0X83, 0XC3, 0XE3, 0XF3, 0XDB, 0XCF, 0XC7, 0XC3};
+#line 1 "D:/Mikro 8051/code 8051/BT1b.c"
+unsigned char code chuU[] = {0xC3, 0xC3, 0xC3, 0xC3, 0xC3, 0xC3, 0x7E, 0x00};
 
-unsigned char code QuetB[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
-unsigned char code QuetE[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
-unsigned char code QuetN[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
+unsigned char code chuO[] = {0x3C, 0x66, 0xC3, 0xC3, 0xC3, 0x66, 0x3C, 0x00};
 
-void Fn_DELAY (unsigned int_vrui_Time)
+unsigned char code chuC[] = {0x3E, 0x60, 0xC0, 0xC0, 0xC0, 0x60, 0x3E, 0x00};
+
+
+unsigned char code QuetU[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
+unsigned char code QuetO[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
+unsigned char code QuetC[]={0xFE,0xFD,0xFB,0xF7,0xEF,0xDF,0xBF,0x7F};
+
+
+void Fn_DELAY (unsigned int int_vrui_Time)
 {
-while(int_vrui_Time--);
+ while(int_vrui_Time--);
 }
 
 void main()
@@ -22,8 +26,8 @@ void main()
  {
  for(i = 0; i < 8; i++)
  {
- P3 = ChuB[i];
- P2 = QuetB[i];
+ P3 = chuU[i];
+ P2 = QuetU[i];
  Fn_DELAY(50);
  P3 = 0X00;
  Fn_DELAY(10);
@@ -33,8 +37,8 @@ void main()
  {
  for(i = 0; i < 8; i++)
  {
- P3 = ChuE[i];
- P2 = QuetE[i];
+ P3 = chuO[i];
+ P2 = QuetO[i];
  Fn_DELAY(50);
  P3 = 0X00;
  Fn_DELAY(10);
@@ -44,12 +48,12 @@ void main()
  {
  for(i = 0; i < 8; i++)
  {
- P3 = ChuN[i];
- P2 = QuetN[i];
+ P3 = chuC[i];
+ P2 = QuetC[i];
  Fn_DELAY(50);
  P3 = 0X00;
  Fn_DELAY(10);
  }
  }
  }
- }
+}
